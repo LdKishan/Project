@@ -23,7 +23,9 @@ public class TraineeController {
 //	 public TraineeController(TraineeServiceImpl traineeServiceImpl) {
 //	        this.traineeService = traineeServiceImpl;
 //	    }
-	 
+	
+	
+	//for Government Employee 
 	 @PostMapping("/trainee/save")
 	 public ResponseEntity<Trainee> saveTrainee(@RequestBody Trainee trainee) {
 		 Trainee saveTreasury = traineeService.saveTreasury(trainee);
@@ -32,6 +34,8 @@ public class TraineeController {
 	 
 	 }
 	 
+	 
+	 //for NonGovernment Employee
 	 @PostMapping("/trainee/nonGov")
 	 public ResponseEntity<TraineeNon> saveTreasuryWithoutId(@RequestBody TraineeNon traineeNon) {
 		 TraineeNon saveTreasury = traineeService.saveTreasury(traineeNon);

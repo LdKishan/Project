@@ -28,12 +28,14 @@ public class TraineeServiceImpl implements TraineeService {
 //    }
 	
 
-
+	//for Government Employee 
 	@Override
 	public Trainee saveTreasury(Trainee treasury) {
 		return traineeRepo.save(treasury);
     }
-
+	
+	
+	//for Non-Government Employee 
 	@Override
 	public TraineeNon saveTreasury(TraineeNon traineeNon) {
 		// TODO Auto-generated method stub
