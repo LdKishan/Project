@@ -2,21 +2,16 @@ package com.project.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "treasury")
+@Table(name = "gov")
 public class Trainee {
 	
 	
 	
-//		@Column(name = "government_or_treasury_employee")
-//		private String governmentOrTreasuryEmployee;
 		@Id
-	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	    @Column(name = "treasury_id")
 	    private Long treasuryId;
 
@@ -31,24 +26,18 @@ public class Trainee {
 
 	    @Column(name = "mobile")
 	    private String mobile;
-	    
-//	    @Column(name = "attend_trainning")
-//	    private String attendTrainning;
 
 	    @Column(name = "training_name")
 	    private String trainingName;
 	    
+	    @Column(name = "location")
+	    private String location;
 	    
+	    @Column(name = "no_of_days")
+	    private String noOfDays;
 	    
-//
-//	    public String getGovernmentOrTreasuryEmployee() {
-//			return governmentOrTreasuryEmployee;
-//		}
-//
-//		public void setGovernmentOrTreasuryEmployee(String governmentOrTreasuryEmployee) {
-//			this.governmentOrTreasuryEmployee = governmentOrTreasuryEmployee;
-//		}
-	
+	    @Column(name = "modes")
+	    private String mode;
 
 
 		public Long getTreasuryId() {
@@ -90,16 +79,6 @@ public class Trainee {
 		public void setMobile(String mobile) {
 			this.mobile = mobile;
 		}
-		
-		
-
-//		public String getAttendTrainning() {
-//			return attendTrainning;
-//		}
-//
-//		public void setAttendTrainning(String attendTrainning) {
-//			this.attendTrainning = attendTrainning;
-//		}
 
 		public String getTrainingName() {
 			return trainingName;
@@ -109,6 +88,32 @@ public class Trainee {
 			this.trainingName = trainingName;
 		}
 
+		public String getLocation() {
+			return location;
+		}
+
+		public void setLocation(String location) {
+			this.location = location;
+		}
+
+		public String getNoOfDays() {
+			return noOfDays;
+		}
+
+		public void setNoOfDays(String noOfDays) {
+			this.noOfDays = noOfDays;
+		}
+
+		public String getMode() {
+			return mode;
+		}
+
+		public void setMode(String mode) {
+			this.mode = mode;
+		}
+
+		
+		
 	   
 	    
 	}
